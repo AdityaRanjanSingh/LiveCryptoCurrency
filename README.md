@@ -1,2 +1,2 @@
-# LiveCryptoCurrency
-Cypto currency live changes in bar 
+# Live crypto currency exchange rates
+![alt text](https://raw.githubusercontent.com/AdityaRanjanSingh/LiveCryptoCurrency/master/img/CryptoCurrencybar.png)
