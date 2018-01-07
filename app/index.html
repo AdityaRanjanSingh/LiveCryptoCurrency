@@ -1,31 +1,36 @@
 <!DOCTYPE html>
 <html ng-app="exchangeRate">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Exchange Rate</title>
-	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
-	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/styles.css">
-	<style>
-		html 					{ overflow-y:scroll; }
-		body 					{ padding-top:50px; }
-		#todo-list 				{ margin-bottom:30px; }
-		#todo-form 	 			{ margin-bottom:50px; }
-	</style>
-	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
-	<script src="js/app.js"></script>
-	<script src="js/d3.min.js"></script>
-	<!-- <script src="js/services/todos.js"></script>
-	<script src="js/core.js"></script> -->
-</head>
-<body ng-controller="mainController">
-	<div class="container-fluid">
-	<div class="row">
-		
-			<div id="BarChart" class="col-lg-6"></div>		
-			<div id="DetailsTable" class="col-lg-6"></div>
-	</div>
-	</div>
-</body>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Exchange Rates</title>
+      <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+         crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="css/styles.css">
+     
+      <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+      <script src="js/app.js"></script>
+      <script src="js/d3.min.js"></script>
+   </head>
+   <body ng-controller="mainController">
+      <div class="container-fluid">
+         <div class="modal fade" id="errorModal" role="dialog">
+            <div class="modal-dialog">
+               <div class="modal-content">
+                  <div class="modal-header">
+                     <button type="button" class="close" data-dismiss="modal">&times;</button>
+                     <span class="glyphicon glyphicon-exclamation-sign"></span>
+                     <h4 class="modal-title">{{errorBody}}</h4>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div id="BarChart" class="col-lg-6"></div>
+            <div id="DetailsTable" class="col-lg-6"></div>
+         </div>
+      </div>
+   </body>
 </html>
