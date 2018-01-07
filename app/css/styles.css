@@ -1,0 +1,100 @@
+.axisLeft text{
+	font-size: 15px
+}
+.xAxis path{
+	fill: none;
+  stroke: #e6550d;
+  shape-rendering: crispEdges;
+}
+.xAxis line{
+	fill: #e6550d;
+  stroke: #e6550d;
+  shape-rendering: crispEdges;
+}
+.xAxis text{
+  fill: #e6550d;
+  shape-rendering: crispEdges;
+}
+
+.axisTop path{
+	fill: none;
+  stroke: #393b79;
+  shape-rendering: crispEdges;
+}
+.axisTop line{
+	fill: #393b79;
+  stroke: #393b79;
+  shape-rendering: crispEdges;
+}
+.axisTop text{
+  fill:#393b79;
+  shape-rendering: crispEdges;
+}
+
+
+.x .axis path{
+	fill: #1f77b4;
+}
+
+.marginTopText{
+	    font-size: 25px;
+    font-weight: bold;
+}
+
+.marginBottomText{
+	font-size: 25px;
+    font-weight: bold;
+}
+
+
+/*table Css*/
+
+.DetailsTable tr{
+	/*border-bottom: 1px solid grey;\*/
+}
+
+.DetailsTable td{
+	padding: 4px 5px;
+        height: 48px;
+}
+.DetailsTable{
+	transform: translate(0px,50px);
+}
+
+.DetailsTable tbody tr:nth-child(odd) {
+	background: #f8f8f8;
+}
+
+.TotalSupplyHeader{
+	width: 100px;
+	text-align: right;
+}
+
+.change7days{
+	text-align: right;
+	width: 50px;
+}
+
+.change24Hour{
+	text-align: right;
+	width: 50px;
+}
+
+.change1Hour{
+	text-align: right;
+	width: 50px;
+}
+
+.colorRed{
+	color: red;
+	font-weight: bold;
+}
+
+.colorGreen{
+	color: green;
+	font-weight: bold;
+}
+
+.DetailsTable thead tr{
+	    border-bottom: 1px solid;
+}
