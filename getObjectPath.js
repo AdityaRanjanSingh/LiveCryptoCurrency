@@ -2,29 +2,21 @@ function getObjPath(object,path){
          var regex = /\./
          var pathArray = path.split(regex);
          var value;
-         var tempObject=object;
+         var tempObject =object;
 
          pathArray.forEach(function(d,index){
 
              if(tempObject.hasOwnProperty(d)){
-
-                 if(index === pathArray.length-1){
-                     value = tempObject[d];
-
-                 }else{
                      tempObject=tempObject[d];
+                 }else{
+                    tempObject=null
                  }
-             }
+             
 
          });
-         if(value){
-             return value;
-         }else{
-             return null
+
+         return tempObject;
          }
-
-
-        }
 
         var emp = {
           name: "Rajesh",
